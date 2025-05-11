@@ -1,0 +1,138 @@
+<?xml version='1.0'?>
+<sdf version='1.8'>
+  <model name='inner_walls'>
+    <pose>0 0 0 0 0 0</pose>
+    
+    <link name='inner_wall_1'>
+      <collision name='inner_wall_1_collision'>
+        <geometry>
+          <box>
+            <size>0.6 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>2 -1 0 0 0 0</pose>
+      </collision>
+      <visual name='inner_wall_visual'>
+        <pose>2 -1 0 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.6 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    
+    <link name='inner_wall_2'>
+      <collision name='inner_wall_2_collision'>
+        <geometry>
+          <box>
+            <size>0.75 0.4 0.5</size>
+          </box>
+        </geometry>
+        <pose>0.5 1 0 0 0 1.5708</pose>
+      </collision>
+      <visual name='inner_wall_2_visual'>
+        <pose>0.5 1 0 0 0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>0.75 0.4 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    
+    <link name='inner_wall_3'>
+      <collision name='inner_wall_3_collision'>
+        <geometry>
+          <box>
+            <size>1.0 0.5 0.5</size>
+          </box>
+        </geometry>
+        <pose>-1.5 -1.0 0 0 0 1.5708</pose>
+      </collision>
+      <visual name='inner_wall_3_visual'>
+        <pose>-1.5 -1.0 0 0 0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>1.0 0.5 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    
+    <link name='inner_wall_4'>
+      <collision name='inner_wall_4_collision'>
+        <geometry>
+          <box>
+            <size>2.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <pose>-3.5 -0.5 0 0 0 1.5708</pose>
+      </collision>
+      <visual name='inner_wall_4_visual'>
+        <pose>-3.5 -0.5 0 0 0 1.5708</pose>
+        <geometry>
+          <box>
+            <size>2.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    
+        <link name='inner_wall_5'>
+      <collision name='inner_wall_5_collision'>
+        <geometry>
+          <box>
+            <size>4.25 0.15 0.5</size>
+          </box>
+        </geometry>
+        <pose>-1.75 1.75 0 0 0 0.55</pose>
+      </collision>
+      <visual name='inner_wall_5_visual'>
+        <pose>-1.75 1.75 0 0 0 0.55</pose>
+        <geometry>
+          <box>
+            <size>4.25 0.15 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
+      </visual>
+    </link>
+    
+    <static>1</static>
+  </model>
+</sdf>
