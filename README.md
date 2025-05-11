@@ -56,7 +56,7 @@ In case of a ROS bag, use `ros2 bag play "filename_of_unzip_rosbag_folder"` to p
 Mapping utilizes the slam_toolbox and requires multiple modeules to be running at the same time. 
 
 When data stream from physical sensors `ros2 launch slam_toolbox roboracer_offline_mapping.launch.py` needs
-to be used, otherwise when they comer from Gazebo virtual sensors `ros2 launch slam_toolbox roboracer_offline_mapping_sim_data.launch.py` needs
+to be used, otherwise when they come from Gazebo virtual sensors `ros2 launch slam_toolbox roboracer_offline_mapping_sim_data.launch.py` needs
 to be used. 
 
 In order to visualize the mapping process `ros2 launch slam_toolbox roboracer_slam_rviz.launch.py` has to be launched. 
