@@ -31,3 +31,7 @@ ROS2 Humble Hawksbill
 7. Run `rosdep install --from-paths src -i -y`
 8. Run `colcon build`
 
+### Simulator 
+
+In order to launch the simulator and the RViz visualization, use the following command: 
+`ros2 launch roboracer_bringup roboracer.launch.py`
