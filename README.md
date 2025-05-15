@@ -60,7 +60,8 @@ When data stream from physical sensors `ros2 launch slam_toolbox roboracer_offli
 to be used, otherwise when they come from Gazebo virtual sensors `ros2 launch slam_toolbox roboracer_offline_mapping_sim_data.launch.py` needs
 to be used. 
 
-In order to visualize the mapping process `ros2 launch slam_toolbox roboracer_slam_rviz.launch.py` has to be launched. 
+In order to visualize the mapping process `ros2 launch slam_toolbox roboracer_slam_rviz.launch.py` has to be launched (requires a second terminal, directed at the workspace 
+and `source install/setup.bash` run). 
 Remember that when data are pre-recorded the ROS bag needs to be played using `ros2 bag play "filename_of_unzip_rosbag_folder."`.
 Through the interface (as seen below) you can save the map in `.pgm` format, in order to used it later for the 3D model rebuild.
 
