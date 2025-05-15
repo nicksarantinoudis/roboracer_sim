@@ -72,6 +72,7 @@ under the main workspace folder.
 There is the capability to use map2gazebo tool to build a 3D model of a map to use it as a world on Gazebo. This is an offline 
 process and requires the existence of a map in .pgm format created as mentioned above. 
 
-In order to convert a map to a 3D model, you should run `python3 /src/map2gazebo/map2gazebo/map2gazebo_offline.py --map_dir "filename.pgm"`
+In order to convert a map to a 3D model, you should run `python3 src/roboracer_sim/map2gazebo/map2gazebo/map2gazebo_offline.py --map_dir "filename.pgm"`
+The outcome would be a .stl file under the same folder.
 
 ![Screenshot from 2025-05-11 17-55-40](https://github.com/user-attachments/assets/6ee84a9d-9321-47b1-86dc-639da65ecd9b)
