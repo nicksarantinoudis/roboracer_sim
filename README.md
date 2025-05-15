@@ -63,7 +63,8 @@ to be used.
 In order to visualize the mapping process `ros2 launch slam_toolbox roboracer_slam_rviz.launch.py` has to be launched (requires a second terminal, directed at the workspace 
 and `source install/setup.bash` run). 
 Remember that when data are pre-recorded the ROS bag needs to be played using `ros2 bag play "filename_of_unzip_rosbag_folder."`.
-Through the interface (as seen below) you can save the map in `.pgm` format, in order to used it later for the 3D model rebuild.
+Through the interface (as seen below) you can save the map in `.pgm` format, in order to used it later for the 3D model rebuild. Map are saved 
+under the main workspace folder. 
 
 ![Screenshot from 2025-05-04 15-38-16](https://github.com/user-attachments/assets/b1c916ac-5367-4440-8c67-c33cb9114a91)
 
