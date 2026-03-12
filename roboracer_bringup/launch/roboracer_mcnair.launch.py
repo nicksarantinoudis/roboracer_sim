@@ -51,7 +51,7 @@ def generate_launch_description():
         launch_arguments={'gz_args': PathJoinSubstitution([
             pkg_project_gazebo,
             'worlds',
-            'roboracer.world'
+            'mcnair.world'
         ])}.items(),
     )
 
@@ -80,7 +80,7 @@ def generate_launch_description():
         package='ros_gz_bridge',
         executable='parameter_bridge',
         parameters=[{
-            'config_file': os.path.join(pkg_project_bringup, 'config', 'ros_gazebo_config.yaml'),
+            'config_file': os.path.join(pkg_project_bringup, 'config', 'ros_gazebo_config_mcnair.yaml'),
             'qos_overrides./tf_static.publisher.durability': 'transient_local',
         }],
         output='screen'

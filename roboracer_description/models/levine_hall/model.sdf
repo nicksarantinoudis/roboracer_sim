@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.8'>
+  <model name='levine_hall'>
+    <pose>0 0 0 0 0 0</pose>
+    <link name='levine_hall'>
+      <collision name='levine_collision'>
+        <geometry>
+          <mesh>
+            <uri>package://roboracer_description/models/levine_hall/levine_hall.stl</uri>
+          </mesh>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+      </collision>
+      <visual name='levine_visual'>
+        <geometry>
+          <mesh>
+            <uri>package://roboracer_description/models/levine_hall/levine_hall.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

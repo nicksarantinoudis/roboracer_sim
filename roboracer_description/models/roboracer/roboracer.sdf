@@ -38,26 +38,6 @@
         </geometry>
       </collision>
 
-      <visual name='zedVisual'>
-        <pose>0.075 0 0.091 1.5707 0 1.5707</pose>
-        <geometry>
-          <mesh>
-            <scale>0.007 0.007 0.007</scale>
-            <uri>package://roboracer_description/models/roboracer/meshes/zed.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-
-      <visual name='hokuyoVisual'>
-        <pose>0.085 0 0.07 0 0 1.5707</pose>
-        <geometry>
-          <mesh>
-            <scale>0.001 0.001 0.001</scale>
-            <uri>package://roboracer_description/models/roboracer/meshes/hokuyo.dae</uri>
-          </mesh>
-        </geometry>
-      </visual>
-
       <visual name='vescVisual'>
         <pose>-0.09 -0.025 0.0475 0 0 1.5707</pose>
         <geometry>
@@ -77,9 +57,27 @@
           </mesh>
         </geometry>
       </visual>
-
+    </link>
+    
+    <link name="lidar_link">
+      <pose>0.0875 0 0.07 0 0 0</pose>
+      <inertial>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>0.0001</ixx><iyy>0.0001</iyy><izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <visual name='hokuyoVisual'>
+        <pose>-0.0025 0 0 0 0 1.5707</pose>
+        <geometry>
+          <mesh>
+            <scale>0.001 0.001 0.001</scale>
+            <uri>package://roboracer_description/models/roboracer/meshes/hokuyo.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
       <sensor name='hokuyo' type='gpu_lidar'>
-        <pose relative_to="lidar_frame">0 0 0.03 0 0 0</pose>
+        <pose>0 0 0.03 0 0 0</pose>
         <topic>scan</topic>
         <update_rate>15</update_rate>
         <ray>
@@ -100,15 +98,37 @@
         <always_on>1</always_on>
         <visualize>1</visualize>
       </sensor>
+    </link>
 
+    <joint name="base_to_lidar" type="fixed">
+      <parent>base</parent>
+      <child>lidar_link</child>
+    </joint>
+
+    <link name="camera_link">
+      <pose>0.11 0 0.091 0 0 0</pose>
+      <inertial>
+        <mass>0.05</mass>
+        <inertia>
+          <ixx>0.0001</ixx><iyy>0.0001</iyy><izz>0.0001</izz>
+        </inertia>
+      </inertial>
+      <visual name='zedVisual'>
+        <pose>-0.035 0 0 1.5707 0 1.5707</pose>
+        <geometry>
+          <mesh>
+            <scale>0.007 0.007 0.007</scale>
+            <uri>package://roboracer_description/models/roboracer/meshes/zed.dae</uri>
+          </mesh>
+        </geometry>
+      </visual>
       <sensor name='zed' type='camera'>
-        <pose relative_to="camera_frame">0.05 -0.05 0 0 0 0</pose>
+        <pose>0.05 -0.05 0 0 0 0</pose>
         <topic>camera</topic>
-        <frame>camera_frame</frame>
         <update_rate>15</update_rate>
         <visualize>1</visualize>
         <camera name='front_camera'>
-          <horizontal_fov>1.5708</horizontal_fov>
+          <horizontal_fov>1.91986</horizontal_fov>
           <image>
             <width>1920</width>
             <height>1080</height>
@@ -120,15 +140,13 @@
           </clip>
         </camera>
       </sensor>
-
       <sensor name="zed_depth" type="depth_camera" >
-        <pose relative_to="camera_frame">0.05 -0.05 0 0 0 0</pose>
+        <pose>0.05 -0.05 0 0 0 0</pose>
         <topic>depth_camera</topic>
-        <frame>camera_frame</frame>
         <update_rate>15</update_rate>
         <visualize>1</visualize>
         <camera name="front_depth_camera">
-          <horizontal_fov>1.5708</horizontal_fov>
+          <horizontal_fov>1.91986</horizontal_fov>
           <image>
             <width>1280</width>
             <height>720</height>
@@ -140,8 +158,13 @@
           </clip>
         </camera>
       </sensor>
-
     </link>
+
+    <joint name="base_to_camera" type="fixed">
+      <parent>base</parent>
+      <child>camera_link</child>
+    </joint>
+    	
 
     <link name="frontRightWheel">
       <pose relative_to="frontRightWheelJoint">0 0 0 0 0 0</pose>

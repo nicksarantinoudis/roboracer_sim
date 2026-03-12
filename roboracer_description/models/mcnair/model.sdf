@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<sdf version='1.8'>
+  <model name='mcnair'>
+    <pose>0 0 0 0 0 0</pose>
+    <link name='mcnair'>
+      <collision name='mcnair_collision'>
+        <geometry>
+          <mesh>
+            <uri>package://roboracer_description/models/mcnair/mcnair.stl</uri>
+          </mesh>
+        </geometry>
+        <pose>0 0 0 0 0 0</pose>
+      </collision>
+      <visual name='mcnair_visual'>
+        <geometry>
+          <mesh>
+            <uri>package://roboracer_description/models/mcnair/mcnair.stl</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
