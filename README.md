@@ -40,10 +40,16 @@ simulator are provided in order to test the provided software.
 
 ## Simulator 
 
-In order to launch the simulator and the RViz visualization, use the following command: 
-`ros2 launch roboracer_bringup roboracer.launch.py`
+In order to launch the simulator and the RViz visualization, use the following command:  
+`ros2 launch roboracer_bringup roboracer.launch.py`. This command launches Gazebo and RViz 
+with a testing environment simulating Unmanned Systems and Robotics Lab testing area, infused 
+with obstacles.
 
 ![gazebo_rviz](https://github.com/user-attachments/assets/19e09e51-f1ea-4481-80de-7703a5ea80b3)
+
+In addtion, two more environments can be launched; a) Using `ros2 launch roboracer_bringup roboracer_mcnair.launch.py`
+launches Gazebo and RViz within the corridors of McNair Aerospace Center while b) using `ros2 launch roboracer_bringup roboracer_levine.launch.py`
+launches Gazebo and RViz within the corridors of Levine Hall, a typical map used in RoboRacer labs.
 
 ## Visualization
 In order to run the visualizer use the command `ros2 launch roboracer_visualization roboracer_vizualization.launch.py`
