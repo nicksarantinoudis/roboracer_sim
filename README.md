@@ -38,8 +38,9 @@ simulator are provided in order to test the provided software.
 8. Run `colcon build`
 9. Run `source install/setup.bash` after the succesfull build
 
-Note: Depending on the state of the ROS2 installation additional packages might be missing. In that case please install such packages via 
-`sudo apt install ros-humble-package-name`. 
+Note: Depending on the state of your initial ROS 2 installation, additional packages might be missing. Based on feedback, you may specifically need to install the Gazebo bridge and ignition development libraries: `sudo apt install ros-humble-ros-gz libignition-gazebo6-dev libignition-common4-dev`
+
+If any other packages are flagged as missing during your build, please install them via `sudo apt install ros-humble-<package-name>`
 
 ## Simulator 
 
