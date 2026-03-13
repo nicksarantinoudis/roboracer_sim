@@ -46,7 +46,7 @@ In order to launch the simulator and the RViz visualization, use the following c
 ![gazebo_rviz](https://github.com/user-attachments/assets/19e09e51-f1ea-4481-80de-7703a5ea80b3)
 
 ## Visualization
-In order to run the visualizer use the command `ros2 launch roboracer_vizualization roboracer_vizualization.launch.py`
+In order to run the visualizer use the command `ros2 launch roboracer_visualization roboracer_vizualization.launch.py`
 You can use it with sensor data either streaming in from the physical or the simulated system or with a pre-recorded ROS bag.
 Depending on the type of data you are using, you may need to adjust the visualized topic from the RViz interface.
 
