@@ -73,7 +73,7 @@ under the main workspace folder.
 
 ![Screenshot from 2025-05-04 15-38-16](https://github.com/user-attachments/assets/b1c916ac-5367-4440-8c67-c33cb9114a91)
 
-## Map to Gazebos
+## Map to Gazebo
 There is the capability to use map2gazebo tool to build a 3D model of a map to use it as a world on Gazebo. This is an offline 
 process and requires the existence of a map in .pgm format created as mentioned above. 
 
