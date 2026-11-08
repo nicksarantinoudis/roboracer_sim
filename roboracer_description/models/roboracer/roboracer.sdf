@@ -154,7 +154,7 @@
           </image>
           <clip>
             <near>0.1</near>
-            <far>10.0</far>
+            <far>20.0</far>
           </clip>
         </camera>
       </sensor>
