@@ -19,11 +19,8 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Wood</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
+            <ambient>0.0 0.0 0.2 1</ambient>
+ 	    <diffuse>0.0 0.0 0.75 1</diffuse>
         </material>
       </visual>
       <pose>-3.75 0 0 0 0 1.57</pose>
@@ -45,11 +42,8 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Wood</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
+            <ambient>0.0 0.0 0.2 1</ambient>
+ 	    <diffuse>0.0 0.0 0.75 1</diffuse>
         </material>
       </visual>
       <pose>2.75 2.75 0 0 0 0</pose>
@@ -71,11 +65,8 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Wood</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
+            <ambient>0.0 0.0 0.2 1</ambient>
+ 	    <diffuse>0.0 0.0 0.75 1</diffuse>
         </material>
       </visual>
       <pose>-1.5 2.75 0 0 0 0</pose>
@@ -97,11 +88,8 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Wood</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
+            <ambient>0.0 0.0 0.2 1</ambient>
+ 	    <diffuse>0.0 0.0 0.75 1</diffuse>
         </material>
       </visual>
       <pose>3.75 0 0 0 0 1.57</pose>
@@ -123,11 +111,8 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Wood</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
+            <ambient>0.0 0.0 0.2 1</ambient>
+ 	    <diffuse>0.0 0.0 0.75 1</diffuse>
         </material>
       </visual>
       <pose>0 -2.75 0 0 0 0</pose>
